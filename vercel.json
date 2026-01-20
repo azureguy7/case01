@@ -1,0 +1,6 @@
+{
+    "buildCommand": "cd coffee-shop-react && npm install && npm run build",
+    "outputDirectory": "coffee-shop-react/dist",
+    "installCommand": "cd coffee-shop-react && npm install",
+    "framework": null
+}
