@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Swiper custom styles */
+.swiper-button-prev,
+.swiper-button-next {
+    @apply w-10 h-10 bg-white rounded-full shadow-lg;
+    @apply flex items-center justify-center;
+    @apply text-brown-900 transition-all duration-300;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    @apply bg-brown-900 text-white scale-110;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    @apply text-base font-bold;
+}
+
+.swiper-pagination-bullet {
+    @apply w-2.5 h-2.5 bg-beige-300 opacity-100;
+}
+
+.swiper-pagination-bullet-active {
+    @apply w-7 bg-brown-900 rounded-md;
+}
